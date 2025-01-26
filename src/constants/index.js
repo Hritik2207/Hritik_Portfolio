@@ -1,6 +1,8 @@
-import project1 from "../assets/projects/project-1.jpg";
+import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
+import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Javascript, as well as back-end technologies like Java(SpringBoot), MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -45,6 +47,20 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind", "AWS"],
+  },
+  {
+    title: "WeatherWise",
+    image: project4,
+    description:
+      "A React Native application designed to provide users with real-time weather information based on their current or manually entered preference.",
+    technologies: ["JSX", "CSS", "React", "Expo-sqlite"],
+  },
+  {
+    title: "To-Do Application",
+    image: project5,
+    description:
+      "A feature-rich Progressive Web App (PWA) using React that makes managing tasks effortless, even in offline mode.",
+    technologies: ["JSX", "CSS", "React", "Progressive Web App", "IndexedDB "],
   },
 ];
 
