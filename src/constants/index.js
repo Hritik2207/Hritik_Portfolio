@@ -1,13 +1,12 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.png";
+import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Javascript, as well as back-end technologies like Java(SpringBoot), MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I thrive on tackling complex challenges and delivering innovative solutions that empower businesses to thrive in the digital era. I'm eager to collaborate with forward-thinking teams, leveraging my technical and analytical prowess to drive success.
-.`;
+export const ABOUT_TEXT = `I am a passionate cloud enthusiast with certifications in AWS Certified Developer and AZ-900. With a strong foundation in full-stack development using Spring Boot and React, I thrive on tackling complex challenges and delivering innovative solutions that empower businesses in the digital era. My expertise extends to cloud technologies, and I am eager to collaborate with forward-thinking teams, leveraging my technical and analytical skills to drive success.`;
 
 export const EXPERIENCES = [
   {
