@@ -18,30 +18,38 @@ const Experience = () => {
             viewport={{ once: false, amount: 0.2 }}
             className="mb-8 flex flex-wrap lg:justify-center p-6 rounded-lg shadow-lg bg-gray-950 hover:bg-gray-900 transition duration-300"
           >
+            {/* Left Side - Date Section */}
             <div className="w-full lg:w-1/4">
-              <p className="mb-2 text-sm font-semibold text-blue-400">
-                {experience.year}
+              <p className="mb-1 text-sm font-semibold text-blue-400">
+                {experience.startMonth} {experience.startYear} -{" "}
+                {experience.endMonth === "Present"
+                  ? "Present"
+                  : `${experience.endMonth} ${experience.endYear}`}
               </p>
             </div>
 
+            {/* Right Side - Experience Details */}
             <div className="w-full max-w-xl lg:w-3/4">
-              <h6 className="mb-2 font-semibold text-lg">
+              {/* Role & Company */}
+              <h6 className="mb-2 text-lg font-semibold text-gray-200">
                 {experience.role} -{" "}
                 <span className="text-sm text-purple-300 font-medium">
                   {experience.company}
                 </span>
               </h6>
 
+              {/* Description - Fixed Text Readability */}
               <motion.p
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.3, duration: 0.6 }}
                 viewport={{ once: false, amount: 0.2 }}
-                className="mb-5 text-gray-300 text-justify"
+                className="mb-4 text-gray-300 leading-relaxed tracking-normal text-base text-justify hyphens-auto break-words"
               >
                 {experience.description}
               </motion.p>
 
+              {/* Technologies */}
               <div className="flex flex-wrap">
                 {experience.technologies.map((tech, idx) => (
                   <motion.span

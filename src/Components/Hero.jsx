@@ -17,7 +17,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.7 }}
-              className="pb-8 text-5xl lg:text-7xl font-extrabold tracking-tight text-purple-400 animate-pulse"
+              className="pb-6 text-5xl lg:text-7xl font-extrabold tracking-tight text-purple-400 animate-pulse"
             >
               Hritik Arora
             </motion.h1>
@@ -35,32 +35,28 @@ const Hero = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6, duration: 0.7 }}
-              className="my-4 max-w-xl py-6 font-light tracking-tight text-gray-300 text-justify bg-gray-950 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
+              className="my-4 max-w-xl py-4 font-light tracking-normal text-gray-300 leading-relaxed 
+             bg-gray-950 p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 
+             text-base text-justify hyphens-auto"
             >
               {HERO_CONTENT}
             </motion.p>
           </div>
         </div>
 
+        {/* Right Section - Profile Picture */}
         <div className="w-full lg:w-1/2 flex justify-center lg:p-8">
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.9, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.7 }}
-            className="rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition duration-300"
+            className="rounded-full overflow-hidden shadow-xl hover:shadow-purple-500 transition duration-300 hover:scale-105"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8, duration: 0.7 }}
-              className="rounded-full overflow-hidden shadow-xl hover:shadow-purple-500 transition duration-300 hover:scale-105"
-            >
-              <img
-                className="w-60 lg:w-72 object-cover rounded-full border-4 border-gray-800 hover:border-purple-400 transition duration-300"
-                src={profilePic}
-                alt="Hritik"
-              />
-            </motion.div>
+            <img
+              className="w-60 lg:w-72 object-cover rounded-full border-4 border-gray-800 hover:border-purple-400 transition duration-300"
+              src={profilePic}
+              alt="Hritik"
+            />
           </motion.div>
         </div>
       </div>
