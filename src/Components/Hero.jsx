@@ -49,11 +49,18 @@ const Hero = () => {
             transition={{ delay: 0.8, duration: 0.7 }}
             className="rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition duration-300"
           >
-            <img
-              className="w-60 h-60 lg:w-72 lg:h-72 object-cover rounded-full"
-              src={profilePic}
-              alt="Hritik"
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.8, duration: 0.7 }}
+              className="rounded-full overflow-hidden shadow-xl hover:shadow-purple-500 transition duration-300 hover:scale-105"
+            >
+              <img
+                className="w-60 lg:w-72 object-cover rounded-full border-4 border-gray-800 hover:border-purple-400 transition duration-300"
+                src={profilePic}
+                alt="Hritik"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>
